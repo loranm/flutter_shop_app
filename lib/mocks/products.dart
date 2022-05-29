@@ -1,7 +1,5 @@
 import 'package:shop_app/providers/product_provider.dart';
 
-import '../models/product.dart';
-
 final List<ProductProvider> Products = [
   ProductProvider(
     id: 'p1',
