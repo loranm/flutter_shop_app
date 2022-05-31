@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
-import '../widgets/products_grid.dart';
+import 'package:flutter/material.dart'
+    show AppBar, BuildContext, Key, Scaffold, StatelessWidget, Text, Widget;
+import '../widgets/products_grid.dart' show ProductsGrid;
 
 class ProductOverviewScreen extends StatelessWidget {
   const ProductOverviewScreen({Key? key}) : super(key: key);

@@ -1,8 +1,16 @@
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter/material.dart'
+    show
+        AppBar,
+        BuildContext,
+        Key,
+        ModalRoute,
+        Scaffold,
+        StatelessWidget,
+        Text,
+        Widget;
+import 'package:provider/provider.dart' show Provider;
 
-import '../mocks/products.dart';
-import '../providers/products_provider.dart';
+import '../providers/products_provider.dart' show ProductsProvider;
 
 class ProductDetailScreen extends StatelessWidget {
   const ProductDetailScreen({Key? key}) : super(key: key);
