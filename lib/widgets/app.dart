@@ -12,6 +12,7 @@ class ShopApplication extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (ctx) => ProductsProvider(),
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'MyShop',
         theme: ThemeData(
             colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.purple)

@@ -1,6 +1,6 @@
 import 'package:shop_app/providers/product_provider.dart';
 
-final List<ProductProvider> Products = [
+final List<ProductProvider> products = [
   ProductProvider(
     id: 'p1',
     title: 'Red Shirt',

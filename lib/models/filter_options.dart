@@ -1,0 +1,1 @@
+enum filterOptions { favorites, all }

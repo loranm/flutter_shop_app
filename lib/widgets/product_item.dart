@@ -4,9 +4,11 @@ import 'package:shop_app/providers/product_provider.dart';
 import 'package:shop_app/screens/products_detail_screen.dart';
 
 class ProductItem extends StatelessWidget {
+  const ProductItem({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    final product = Provider.of<ProductProvider>(context, listen: false);
+    final product = Provider.of<ProductProvider>(context, listen: true);
 
     return ClipRRect(
       borderRadius: BorderRadius.circular(10),
@@ -30,8 +32,8 @@ class ProductItem extends StatelessWidget {
                 color: Theme.of(context).colorScheme.secondary,
               ),
               trailing: IconButton(
-                icon: Icon(Icons.shopping_cart),
-                onPressed: () => null,
+                icon: const Icon(Icons.shopping_cart),
+                onPressed: () {},
                 color: Theme.of(context).colorScheme.secondary,
               ),
               backgroundColor: Colors.black87,
